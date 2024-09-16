@@ -7,9 +7,14 @@ def clean_item(item):
     if re.match(r"\(\d+", item):
         item = item.replace("(", "")  # Remove the opening parenthesis
     
-    # Step 2: Replace ")" followed by unit symbols (%$, &, etc.), leave other cases like "annual(not)" untouched
-    item = re.sub(r"\)([%$&]+)", "", item)  # Remove ")" and valid unit symbols, but leave other cases intact
+    # Step 2: If the item is exactly ")", replace it with an empty string
+    elif item == ")":
+        item = ""  # Replace ")" with an empty string
     
+    # Step 3: Replace ")" followed by unit symbols (%$, &, etc.), leave other cases like "annual(not)" untouched
+    else:
+        item = re.sub(r"\)([%$&]+)", "", item)  # Remove ")" and valid unit symbols, but leave other cases intact
+
     return item
 
 def extract_tables_to_csv(input_pdf_path, output_csv_path):
