@@ -739,17 +739,17 @@ Netdeferredtaxasset,$,0.3,$,1.4
 
 ,2022,,2021,,2020,
 Federalstatutoryrate,21.0,%,21.0,%,21.0,%
-"Stateincometaxes,net",6.0,%,1.1,%),1.2,%)
-Foreigntaxratedifferential,5.6,%,1.3,%),1.0,%)
-Non-deductibledebtcosts,8.7,%,2.2,%),1.6,%)
-Non-deductiblecompensation,4.6,%,0.5,%),1.0,%)
-Otherpermanentdifferences,4.9,%,0.3,%),0.3,%
-Effectoflawandratechanges,54.8,%),4.6,%),4.6,%)
-Valuationallowance,21.0,%,14.1,%),15.1,%)
-Benefitfromintraperiodtaxallocation,(—,%),—,%,20.0,%
+"Stateincometaxes,net",6.0,%,1.1,,1.2,
+Foreigntaxratedifferential,5.6,%,1.3,,1.0,
+Non-deductibledebtcosts,8.7,%,2.2,,1.6,
+Non-deductiblecompensation,4.6,%,0.5,,1.0,
+Otherpermanentdifferences,4.9,%,0.3,,0.3,%
+Effectoflawandratechanges,54.8,,4.6,,4.6,
+Valuationallowance,21.0,%,14.1,,15.1,
+Benefitfromintraperiodtaxallocation,(—,,—,%,20.0,%
 Netchangeinunrecognizedtaxbenefits,0.1,,0.3,%,8.9,%
-"Other,net(primarilyprioryearreturntoprovision)",0.8,%,0.1,%),1.1,%
-Effectivetaxrate,17.7,%,2.9,%),26.8,%
+"Other,net(primarilyprioryearreturntoprovision)",0.8,%,0.1,,1.1,%
+Effectivetaxrate,17.7,%,2.9,,26.8,%
 
 (inmillions),2022,,2021,,2020,
 Current:,,,,,,

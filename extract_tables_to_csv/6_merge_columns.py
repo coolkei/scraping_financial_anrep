@@ -21,6 +21,31 @@ def clean_item(item):
 
     return item
 
+def merge_columns(table, dollar_column_indices):
+    """
+    Merge the columns containing the dollar sign with the next column.
+    """
+    merged_table = []
+    
+    for row in table:
+        merged_row = []
+        i = 0
+        while i < len(row):
+            if i in dollar_column_indices and i + 1 < len(row):
+                # Handle None values and concatenate the two columns safely
+                col1 = row[i] if row[i] is not None else ""
+                col2 = row[i+1] if row[i+1] is not None else ""
+                merged_value = f"{col1} {col2}".strip()
+                merged_row.append(merged_value)
+                i += 2  # Skip the next column since it has been merged
+            else:
+                # Append the other columns as they are
+                merged_row.append(row[i])
+                i += 1
+        merged_table.append(merged_row)
+    
+    return merged_table
+
 def extract_tables_to_csv(input_pdf_path, output_csv_path):
     with pdfplumber.open(input_pdf_path) as pdf:
         with open(output_csv_path, mode='w', newline='', encoding='utf-8') as csv_file:
@@ -41,6 +66,22 @@ def extract_tables_to_csv(input_pdf_path, output_csv_path):
                         # Transpose the table to work with columns
                         table_transposed = list(zip(*cleaned_table))
                         
+                        # Look for all columns with a "$" symbol
+                        dollar_column_indices = []
+                        for i, column in enumerate(table_transposed):
+                            if any("$" in str(item) for item in column):
+                                dollar_column_indices.append(i)
+
+                        # If columns with "$" are found, merge them with the next column
+                        if dollar_column_indices:
+                            # Transpose back to rows
+                            cleaned_table = list(zip(*table_transposed))
+                            # Merge all identified columns with their next column
+                            cleaned_table = merge_columns(cleaned_table, dollar_column_indices)
+
+                        # Transpose back to columns to filter out empty columns
+                        table_transposed = list(zip(*cleaned_table))
+                        
                         # Remove columns where all values are None or empty
                         filtered_columns = [col for col in table_transposed if any(val for val in col if val and val.strip())]
                         
@@ -55,5 +96,5 @@ def extract_tables_to_csv(input_pdf_path, output_csv_path):
 
 # Example usage
 input_pdf = "yellow.pdf"
-output_csv = "extracted_tables_cleaned.csv"
+output_csv = "extracted_tables_ox.csv"
 extract_tables_to_csv(input_pdf, output_csv)
