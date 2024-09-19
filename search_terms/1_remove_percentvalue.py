@@ -142,6 +142,6 @@ def extract_tables_to_csv(input_pdf_path, output_csv_path):
     print(f"Tables extracted and saved to {output_csv_path}")
 
 # Example usage
-input_pdf = "D:/Second/scripts/search_terms/wolfspeedInc23.pdf"
-output_csv = "D:/Second/scripts/search_terms/wolf.csv"
+input_pdf = "D:/Second/scripts/PDFs/Yellow Corporation 2022 Annual Report.pdf"
+output_csv = "D:/Second/scripts/results/complex_tables.csv"
 extract_tables_to_csv(input_pdf, output_csv)

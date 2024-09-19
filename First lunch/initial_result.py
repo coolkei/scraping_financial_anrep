@@ -279,6 +279,6 @@ def process_pdf_to_excel(pdf_path, excel_output):
     df.to_excel(excel_output, index=False)
     print(f"Data Successfully extracted and saved to {excel_output}")
 
-pdf_path = "yellow.pdf"
+pdf_path = "D:/Second/scripts/PDFs/Yellow Corporation 2022 Annual Report.pdf"
 excel_output = "output_data.xlsx"
 process_pdf_to_excel(pdf_path, excel_output)

@@ -23,6 +23,6 @@ def extract_tables_with_pdfplumber(input_pdf_path, output_pdf_path):
     print(f"Extracted tables have been saved to {output_pdf_path}")
 
 # Example usage
-input_pdf = "yellow.pdf"
+input_pdf = "D:/Second/scripts/PDFs/Yellow Corporation 2022 Annual Report.pdf"
 output_pdf = "extracted_tables_with_pdfplumber.pdf"
 extract_tables_with_pdfplumber(input_pdf, output_pdf)
