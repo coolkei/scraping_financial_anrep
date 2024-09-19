@@ -103,28 +103,28 @@ Operatingrevenue,"$ 5,121.8","$ 4,513.7"
 Changeinrevenuedeferralandother,44.1,26.0
 Totalpickeduprevenue,"$ 5,077.7","$ 4,487.7"
 
-2022,2021,2020
-,,
-$ 21.8,$ 109.1,$ 53.5
-161.6,150.4,135.6
-4.7,3.1,19.6
-143.4,143.6,134.9
-331.5,188.0,197.4
-,,
-38.0,0.7,45.3
-2.5,11.6,2.9
-8.4,8.5,7.3
-0.4,0.8,0.3
-5.3,4.4,4.7
-12.1,64.7,3.6
-1.2,3.0,3.5
-,,
-5.3,—,—
-—,—,3.9
-19.4,24.3,17.3
-343.1,306.0,195.6
-—,—,3.7
-$ 343.1,$ 306.0,$ 191.9
+(inmillions),2022,2021,2020
+Reconciliationofnetincome(loss)toAdjustedEBITDA:,,,
+Netincome(loss),$ 21.8,$ 109.1,$ 53.5
+"Interestexpense,net",161.6,150.4,135.6
+Incometaxexpense(benefit),4.7,3.1,19.6
+Depreciationandamortization,143.4,143.6,134.9
+EBITDA,331.5,188.0,197.4
+AdjustmentsforTLAgreements:,,,
+"(Gains)lossesonpropertydisposals,net",38.0,0.7,45.3
+Non-cashreservechanges(a),2.5,11.6,2.9
+Letterofcreditexpense,8.4,8.5,7.3
+Permitteddispositionsandother,0.4,0.8,0.3
+Equity-basedcompensationexpense,5.3,4.4,4.7
+Non-unionpensionsettlementcharges,12.1,64.7,3.6
+"Other,net",1.2,3.0,3.5
+Expenseamountssubjectto10%threshold(b):,,,
+DepartmentofDefensesettlementcharge,5.3,—,—
+COVID-19,—,—,3.9
+"Other,net",19.4,24.3,17.3
+AdjustedEBITDApriorto10%threshold,343.1,306.0,195.6
+AdjustmentspursuanttoTTMcalculation(b),—,—,3.7
+AdjustedEBITDA,$ 343.1,$ 306.0,$ 191.9
 
 (inmillions),2022,2021
 Cashandcashequivalents,$ 235.1,$ 310.7
@@ -708,14 +708,16 @@ Vestedanddistributed,580,5.69
 Forfeited,81,9.80
 "UnvestedatDecember31,2022","1,775",$ 7.65
 
-Shares/units(inthousands),,,
-2022,,2021,2020
-,151,494,12
-,150,492,—
-,77,135,129
-,—,—,"1,500"
-,284,30,15
-,662,"1,151","1,656"
+,Shares/units(inthousands),,,
+VestingTerms,2022,,2021,2020
+"33.3%within30daysand33.3%onthe1and2yearanniversaryofgrant
+date",,151,494,12
+20%peryearforfiveyears,,150,492,—
+100%immediately,,77,135,129
+"25%immediatelyand25%onthe1,2and3yearanniversaryofgrant
+date",,—,—,"1,500"
+Othervariousvestingterms,,284,30,15
+Totalrestrictedstockandstockunitsgranted,,662,"1,151","1,656"
 
 (inmillions),2022,2021(a)
 Depreciation,$ 146.8,$ 104.5

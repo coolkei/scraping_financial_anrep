@@ -124,10 +124,11 @@ def extract_tables_to_csv(input_pdf_path, output_csv_path):
                         # Remove columns where all values are None or empty
                         filtered_columns = [col for col in table_transposed if any(val for val in col if val and val.strip())]
 
-                        # **New code to remove columns containing "%"**
-                        # Remove any column that contains an item with a percent mark ("%")
+                        # **New code to remove columns containing "%" except the first column**
+                        # Remove any column that contains an item with a percent mark ("%"), except for the first column
                         filtered_columns = [
-                            col for col in filtered_columns if not any("%" in str(item) for item in col)
+                            col for idx, col in enumerate(filtered_columns) 
+                            if idx == 0 or not any("%" in str(item) for item in col)
                         ]
                         # **End of new code**
 
